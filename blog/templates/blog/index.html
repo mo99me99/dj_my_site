@@ -1,7 +1,47 @@
 {% extends "base.html" %}
+{% load static %}
+{% block title %}MMTI Blog{% endblock title %} 
 
-{% block title %}MMTI Blog{% endblock title %}
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock css_files %}
 
-{% block content %}
-  <h1>Welcome to my blog.</h1>
+{%block content %}
+<header id="main-navigation">
+  <h1><a href="">MMTI Blog</a></h1>
+  <nav>
+    <a href="">All Posts</a>
+  </nav>
+</header>
+
+
+<section id="welcome">
+  <header>
+    <img src="" alt="Mohammad Mehdi - The Author Of This Blog">
+  </header>
+  <p>Hi, I am Mohammad Mehdi and I love to blog about tech and the world!</p>
+</section>
+
+<section>
+  <h2>My Latest Posts</h2>
+  <ul>
+    <li>
+      <article class="posts">
+        <a href="">
+          <img src="" alt="Mountain Hiking">
+          <div class="post__content">
+            <h3>Mountain Hiking</h3>
+            <p>There is nothing like the views when you.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, tempora. Ducimus ea voluptas exercitationem harum, tempore officiis rerum itaque iure laboriosam saepe maxime molestias! Cumque perferendis sunt est quibusdam nesciunt.</p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I DO</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium veniam ullam blanditiis animi laborum explicabo incidunt tenetur rerum neque aperiam quas quod, magnam unde, mollitia repellendus similique expedita nesciunt.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, asperiores. Molestiae exercitationem quo iste, et modi sint, fugit eius tenetur quod similique, doloremque ipsam culpa minima consequatur repellat consequuntur maxime.</p>
+</section>
 {% endblock content %}
