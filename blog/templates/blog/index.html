@@ -3,17 +3,11 @@
 {% block title %}MMTI Blog{% endblock title %} 
 
 {% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/post.css" %}">
   <link rel="stylesheet" href="{% static "blog/index.css" %}">
 {% endblock css_files %}
 
 {%block content %}
-<header id="main-navigation">
-  <h1><a href="">MMTI Blog</a></h1>
-  <nav>
-    <a href="">All Posts</a>
-  </nav>
-</header>
-
 
 <section id="welcome">
   <header>
@@ -25,17 +19,7 @@
 <section>
   <h2>My Latest Posts</h2>
   <ul>
-    <li>
-      <article class="posts">
-        <a href="">
-          <img src="{% static "blog/images/DPS.png" %}" alt="Mountain Hiking">
-          <div class="post__content">
-            <h3>Mountain Hiking</h3>
-            <p>There is nothing like the views when you.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, tempora. Ducimus ea voluptas exercitationem harum, tempore officiis rerum itaque iure laboriosam saepe maxime molestias! Cumque perferendis sunt est quibusdam nesciunt.</p>
-          </div>
-        </a>
-      </article>
-    </li>
+    {% include "blog/includes/post.html" %}
   </ul>
 </section>
 
