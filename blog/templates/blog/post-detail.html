@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load static %}
+ 
+{% block title %}
+  This post title
+{% endblock title %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+  <section id='summery'>
+    <h2>Post Title</h2>
+    <article>
+      <img src="{% static "blog/images/mmdreza.png" %}" alt="Post Title">
+      <address>By Mohammad</address>
+      <div>
+        Last Update on <time datetime="">july 10th</time>
+      </div>
+    </article>
+  </section>
+  <main>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi debitis maxime molestias at commodi laudantium qui. A maiores illo enim sit fuga nisi amet corporis praesentium ullam. Tempore, nostrum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi debitis maxime molestias at commodi laudantium qui. A maiores illo enim sit fuga nisi amet corporis praesentium ullam. Tempore, nostrum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi debitis maxime molestias at commodi laudantium qui. A maiores illo enim sit fuga nisi amet corporis praesentium ullam. Tempore, nostrum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi debitis maxime molestias at commodi laudantium qui. A maiores illo enim sit fuga nisi amet corporis praesentium ullam. Tempore, nostrum.
+    </p>
+  </main>
+{% endblock content %}
