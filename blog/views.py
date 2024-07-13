@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def starting_page(request):
-    return HttpResponse('Hello this is index page')
+    return render(request, template_name='blog/index.html')
 
 
 def posts(request):
